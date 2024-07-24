@@ -1,0 +1,18 @@
+.homecard {
+  width: 250px;
+  position: relative;
+}
+.homecard__value {
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: red;
+  font-size: 30px;
+  color: white;
+}
