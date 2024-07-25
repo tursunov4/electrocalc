@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Inter"), url("./Fonts/Inter-Regular.ttf") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Inter"), url("./Fonts/Inter-Medium.ttf") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Inter"), url("./Fonts/Inter-SemiBold.ttf") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserra "), url("./Fonts/Inter-Bold.ttf") format("woff");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +32,7 @@
 }
 
 body {
-  background: black;
+  font-family: "Inter", sans-serif;
 }
 .container {
   max-width: 1440px;
