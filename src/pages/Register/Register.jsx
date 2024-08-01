@@ -1,9 +1,9 @@
 import React from "react";
 import Loginui from "../../components/Loginui/Loginui";
+import "./register.css";
 import { useForm } from "react-hook-form";
-import "./login.css";
 import { useNavigate } from "react-router-dom";
-const Login = () => {
+const Register = () => {
   const {
     register,
     handleSubmit,
@@ -15,7 +15,10 @@ const Login = () => {
   const navigate = useNavigate();
   return (
     <Loginui>
-      <h2 className="login__title">Привет! Добро пожаловать, снова!</h2>
+      <h2 className="register__title">Забыли пароль?</h2>
+      <p className="regiter__about--text">
+        Введите свой номер телефона и мы отправим вам SMS
+      </p>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group__box">
           <div className="form-group">
@@ -33,35 +36,15 @@ const Login = () => {
               <span className="login__error">{errors.phoneNumber.message}</span>
             )}
           </div>
-          <div className="form-group">
-            <label className="login__label" htmlFor="password">
-              Пароль
-            </label>
-            <input
-              className="login__input"
-              type="password"
-              {...register("password", { required: "Введите пароль" })}
-              placeholder="Введите пароль"
-            />
-            {errors.password && (
-              <span className="login__error">{errors.password.message}</span>
-            )}
-          </div>
         </div>
-        <div className="form__bottom--group">
-          <label className="form__bottom--label">
-            <input
-              className="login__checkbox"
-              type="checkbox"
-              {...register("rememberMe")}
-            />
-            Запомните меня
-          </label>
-          <p onClick={() => navigate("/register")} className="login__navigate">
-            Забыли пароль?
-          </p>
-        </div>
+
         <button className="form__btn" type="submit">
+          Далее
+        </button>
+        <button
+          onClick={() => navigate("/login")}
+          className="form__navigatebtn"
+        >
           Войти
         </button>
       </form>
@@ -69,4 +52,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

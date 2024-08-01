@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import PrivateRoutes from "./untils/PrivateRoute";
 import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import Checkcode from "./pages/Checkcode/Checkcode";
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
         </Route>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/check-code" element={<Checkcode />} />
       </Routes>
     </div>
   );
