@@ -12,7 +12,7 @@ const Productcard = ({ spendKw, image, id }) => {
     axios
       .get(`${base__url}/api/subtopic${id}`)
       .then((res) => {
-        setVolt(res.data?.at(-1)?.power);
+        setVolt(res.data?.power);
       })
       .catch((err) => {
         console.log(err);

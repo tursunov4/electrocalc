@@ -10,7 +10,6 @@ import img2 from "../../assets/Images/smart-tv.png";
 import img3 from "../../assets/Images/idea-bulb.png";
 import img4 from "../../assets/Images/hair-dryer.png";
 import img5 from "../../assets/Images/fridge (1).png";
-import img6 from "../../assets/Images/air-conditioner.png";
 import axios from "axios";
 const Home = () => {
   const [catalogactive, setCatalogActive] = useState(0);
@@ -35,7 +34,7 @@ const Home = () => {
       .get(`http://192.168.31.50:3000/api/subtopic6`)
       .then((res) => {
         console.log(res.data);
-        setAllwatt(res.data?.at(-1)?.power);
+        setAllwatt(res.data?.power);
       })
       .catch((err) => {
         console.log(err);
