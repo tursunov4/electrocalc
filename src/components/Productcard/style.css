@@ -4,6 +4,7 @@
 }
 
 .productcard__box {
+  position: relative;
   display: block;
   width: 200px;
   height: 200px;
@@ -13,6 +14,11 @@
   border: 5px aqua solid;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+.toggle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 .porductcard__img {
@@ -28,7 +34,7 @@
   border: 3px solid #00ffff;
 }
 .productcard__boxactive {
-  background-color: rgb(188, 60, 21);
+  background-color: #fb8500;
 }
 
 .productcard__bottom--box {
@@ -42,6 +48,6 @@
   border-radius: 4px;
 }
 .product__kw {
-  color: white;
+  color: #a39c9c6e;
   font-size: 16px;
 }

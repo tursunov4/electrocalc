@@ -1,0 +1,49 @@
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.select-button {
+  height: 70px;
+  width: 220px;
+  background-color: transparent;
+  color: #00e3ff;
+  border: 2px solid #00e3ff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.select-button.active {
+  background-color: #00e3ff;
+  color: white;
+}
+
+.info-box {
+  border: 2px solid #00e3ff;
+  /* background-color: #ff6600; */
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.line-container {
+  border: 2px solid #00e3ff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.linegraph__container {
+  width: 1000px;
+}

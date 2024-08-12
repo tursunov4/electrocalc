@@ -9,7 +9,7 @@
   width: 25px;
   height: 50px;
   border-radius: 4px;
-  border: 2px solid #fff;
+  border: 2.5px solid #fff;
 }
 .chargehome__listitem--active {
   background-color: rgb(226, 194, 18);
