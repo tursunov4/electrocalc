@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./carditem.css";
 import LineGraph from "../../components/LInegraph/Linegraph";
-import Productimg from "../../assets/Images/air-conditioner.png";
 import ProductCharge from "../../components/HomeCharge/PorductCharge";
 import img1 from "../../assets/Images/washing-machine (2).png";
 import img2 from "../../assets/Images/smart-tv.png";
