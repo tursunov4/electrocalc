@@ -3,13 +3,14 @@ import "./style.css";
 import axios from "axios";
 import ToggleSwitch from "../Toogleswitch/Toogleswitch";
 import { useNavigate } from "react-router-dom";
+import { base__url } from "../../service/api";
 const Productcard = ({ spendKw, image, id }) => {
   const [active, setActive] = useState(false);
   const [volt, setVolt] = useState("");
   const navigate = useNavigate();
   const getData = () => {
     axios
-      .get(`http://192.168.31.50:3000/api/subtopic${id}`)
+      .get(`${base__url}/api/subtopic${id}`)
       .then((res) => {
         setVolt(res.data?.at(-1)?.power);
       })

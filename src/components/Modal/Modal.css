@@ -1,0 +1,48 @@
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-option {
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.modal-option.selected {
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+.modal-option:hover {
+  background-color: #f0f0f0;
+}
